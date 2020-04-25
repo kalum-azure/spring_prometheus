@@ -5,11 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/sample")
+@RequestMapping("/api")
 public class SampleController {
 
-    @GetMapping("/hello")
-    public String sayHello(){
-        return "<h2> Hello, How are you ? </h2>";
+    @GetMapping("/app1")
+    public String hellAppFirst(){
+        return "<h2> Hello From Application1 </h2>";
+    }
+
+    @GetMapping("/app1")
+    public String hellAppSecond(){
+        return "<h2> Hello From Application2 </h2>";
     }
 }
