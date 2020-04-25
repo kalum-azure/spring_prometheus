@@ -13,7 +13,7 @@ public class SampleController {
         return "<h2> Hello From Application1 </h2>";
     }
 
-    @GetMapping("/app1")
+    @GetMapping("/app2")
     public String hellAppSecond(){
         return "<h2> Hello From Application2 </h2>";
     }
